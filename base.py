@@ -14,6 +14,11 @@ a.next = b
 b.next = c
 c.next = d
 
+class Linkedlist:
+  """Head node"""
+  def __init__(self, head=None):
+    self.head = head
+
 def linked_list_values(head):
   """function to add values to nodes into list or an 'array' """
   values = []
@@ -45,6 +50,3 @@ def print_llist(head):
   while current is not None:
     print(current.val)
     current = current.next
-
-
-
